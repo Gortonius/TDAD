@@ -1,9 +1,9 @@
-﻿Log file open, 07/04/17 18:51:54
+﻿Log file open, 07/05/17 21:39:22
 LogInit:Display: Running engine for game: TDAD
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(886567281) SRandInit(886567281).
+LogInit:Display: RandInit(-1177130496) SRandInit(-1177130496).
 LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.082572
+LogStats: Stats thread started at 0.493521
 LogInit: Using libcurl 7.47.1
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2g
@@ -22,9 +22,6 @@ LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
 LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
 OCULUS: Info: [CAPI] LibOVR module is located at C:\Program Files\Oculus\Support\oculus-runtime\LibOVRRT64_1.dll
 OCULUS: Debug: Connected to the server running version (prod = 1).1.16.0(build = 409268) feature version = 0. Client runs version (prod = 1).1.16.0(build = 409268) feature version = 0
-OCULUS: Debug: [HMDState] Using default profile default
-OCULUS: Info: IAD changed to 58.7mm
-OCULUS: Debug: Creating factory
 LogHMD: GearVR: Emulating GearVR using Oculus Rift!
 LogInit: Build: ++UE4+Release-4.16-CL-3514769
 LogInit: Engine Version: 4.16.2-3514769+++UE4+Release-4.16
@@ -51,168 +48,831 @@ LogInit: Compiled (64-bit): Jun 29 2017 02:03:24
 LogInit: Compiled with Visual C++: 19.00.24215.01
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.16
-LogInit: Command line: -EpicPortal 
+LogInit: Command line:  
 LogInit: Base directory: H:/UE_4.16/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.07.04-17.51.55:465][  0]LogInit: Selected Device Profile: [Windows]
-[2017.07.04-17.51.55:465][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.07.04-17.51.55:472][  0]LogInit: Computer: DAN-PC
-[2017.07.04-17.51.55:472][  0]LogInit: User: dan
-[2017.07.04-17.51.55:472][  0]LogInit: CPU Page size=4096, Cores=4
-[2017.07.04-17.51.55:472][  0]LogInit: High frequency timer resolution =3.897222 MHz
-[2017.07.04-17.51.55:472][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
-[2017.07.04-17.51.55:472][  0]LogMemory: Platform Memory Stats for Windows
-[2017.07.04-17.51.55:472][  0]LogMemory: Process Physical Memory: 278.38 MB used, 278.38 MB peak
-[2017.07.04-17.51.55:472][  0]LogMemory: Process Virtual Memory: 266.70 MB used, 266.70 MB peak
-[2017.07.04-17.51.55:472][  0]LogMemory: Physical Memory: 12019.90 MB used,  20622.11 MB free, 32642.01 MB total
-[2017.07.04-17.51.55:472][  0]LogMemory: Virtual Memory: 678.46 MB used,  20622.11 MB free, 134217728.00 MB total
-[2017.07.04-17.51.55:520][  0]LogInit: Using OS detected language (en-US).
-[2017.07.04-17.51.55:520][  0]LogInit: Using OS detected locale (en-US).
-[2017.07.04-17.51.55:523][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2017.07.04-17.51.56:269][  0]LogD3D11RHI: D3D11 adapters:
-[2017.07.04-17.51.56:303][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 980 Ti' (Feature Level 11_0)
-[2017.07.04-17.51.56:303][  0]LogD3D11RHI:       6103/0/16321 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2017.07.04-17.51.56:309][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
-[2017.07.04-17.51.56:309][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
-[2017.07.04-17.51.56:310][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2017.07.04-17.51.56:310][  0]LogD3D11RHI:       0/0/16321 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2017.07.04-17.51.56:310][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.07.04-17.51.56:316][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.07.04-17.51.56:316][  0]LogD3D11RHI:     GPU DeviceId: 0x17c8 (for the marketing name, search the web for "GPU Device Id")
-[2017.07.04-17.51.56:316][  0]LogWindows: EnumDisplayDevices:
-[2017.07.04-17.51.56:316][  0]LogWindows:    0. 'NVIDIA GeForce GTX 980 Ti' (P:1 D:1)
-[2017.07.04-17.51.56:317][  0]LogWindows:    1. 'NVIDIA GeForce GTX 980 Ti' (P:0 D:0)
-[2017.07.04-17.51.56:317][  0]LogWindows:    2. 'NVIDIA GeForce GTX 980 Ti' (P:0 D:0)
-[2017.07.04-17.51.56:318][  0]LogWindows:    3. 'NVIDIA GeForce GTX 980 Ti' (P:0 D:0)
-[2017.07.04-17.51.56:319][  0]LogWindows:    4. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2017.07.04-17.51.56:320][  0]LogWindows:    5. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2017.07.04-17.51.56:320][  0]LogWindows:    6. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2017.07.04-17.51.56:321][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
-[2017.07.04-17.51.56:321][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 980 Ti
-[2017.07.04-17.51.56:321][  0]LogD3D11RHI:   Driver Version: 382.33 (internal:22.21.13.8233, unified:382.33)
-[2017.07.04-17.51.56:321][  0]LogD3D11RHI:      Driver Date: 5-17-2017
-[2017.07.04-17.51.56:321][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2017.07.04-17.51.56:341][  0]LogD3D11RHI: Async texture creation enabled
-[2017.07.04-17.51.56:351][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2017.07.04-17.51.56:356][  0]LogShaderCompilers: Guid format shader working directory is 22 characters bigger than the processId version (../../../../TDAD/TDAD/Intermediate/Shaders/WorkingDirectory/22852/).
-[2017.07.04-17.51.56:356][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/dan/AppData/Local/Temp/UnrealShaderWorkingDir/05445FCF43E8A018B40AF0B193FF517A/'.
-[2017.07.04-17.51.56:356][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2017.07.04-17.51.57:199][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2017.07.04-17.51.57:231][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
-[2017.07.04-17.51.57:262][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
-[2017.07.04-17.51.57:293][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
-[2017.07.04-17.51.57:325][  0]LogTemp:Display: Loaded TP MacTargetPlatform
-[2017.07.04-17.51.57:357][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2017.07.04-17.51.57:388][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.07.04-17.51.57:420][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2017.07.04-17.51.57:448][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2017.07.04-17.51.57:479][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2017.07.04-17.51.57:513][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2017.07.04-17.51.57:545][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2017.07.04-17.51.57:576][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2017.07.04-17.51.57:607][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2017.07.04-17.51.57:638][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2017.07.04-17.51.57:700][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2017.07.04-17.51.57:700][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.07.04-17.51.57:725][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2017.07.04-17.51.57:790][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2017.07.04-17.51.57:808][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2017.07.04-17.51.57:839][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
-[2017.07.04-17.51.57:870][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.07.04-17.51.57:901][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2017.07.04-17.51.57:933][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2017.07.04-17.51.57:933][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2017.07.04-17.51.58:219][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2017.07.04-17.51.58:300][  0]LogDerivedDataCache: Loaded boot cache 0.08s 90MB C:/Users/dan/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
-[2017.07.04-17.51.58:300][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/dan/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
-[2017.07.04-17.51.58:300][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../TDAD/TDAD/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.07.04-17.51.58:300][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.07.04-17.51.58:300][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../TDAD/TDAD/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.07.04-17.51.58:300][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.07.04-17.51.58:314][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.07.04-17.51.58:327][  0]LogDerivedDataCache: Using Local data cache path C:/Users/dan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.07.04-17.51.58:334][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2017.07.04-17.51.58:334][  0]LogSlate: Using Freetype 2.6.0
-[2017.07.04-17.51.58:335][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.07.04-17.51.58:335][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.07.04-17.51.58:579][  0]LogInit: Selected Device Profile: [Windows]
-[2017.07.04-17.51.58:634][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2017.07.04-17.51.58:742][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
-[2017.07.04-17.51.58:767][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2017.07.04-17.51.58:797][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
-[2017.07.04-17.51.58:797][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
-[2017.07.04-17.51.58:797][  0]LogMeshUtilities: No automatic mesh merging module available
-[2017.07.04-17.51.59:179][  0]LogNetVersion: TDAD , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 3237355875)
-[2017.07.04-17.51.59:227][  0]LogAssetRegistry: FAssetRegistry took 0.0238 seconds to start up
-[2017.07.04-17.51.59:268][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.026998 seconds
-[2017.07.04-17.51.59:275][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
-[2017.07.04-17.51.59:275][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
-[2017.07.04-17.51.59:275][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.07.04-17.51.59:313][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2017.07.04-17.52.01:193][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2017.07.04-17.52.01:231][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.07.04-17.52.01:600][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2017.07.04-17.52.01:871][  0]SourceControl: Info Source control is disabled
-[2017.07.04-17.52.02:118][  0]SourceControl: Info Source control is disabled
-[2017.07.04-17.52.02:151][  0]SourceControl: Info Source control is disabled
-[2017.07.04-17.52.02:186][  0]SourceControl: Info Source control is disabled
-[2017.07.04-17.52.02:639][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2017.07.04-17.52.03:063][  0]LogEngine: Initializing Engine...
-[2017.07.04-17.52.03:063][  0]LogHMD: Oculus plugin initialized. Version: 4.16.2-3514769+++UE4+Release-4.16, LibOVR: 1.16.0, SDK: 1.12.0, built Jun 29 2017, 02:10:56
-[2017.07.04-17.52.03:234][  0]OCULUS: Debug: [HMDState] Using default profile default
-[2017.07.04-17.52.03:234][  0]OCULUS: Info: IAD changed to 58.7mm
-[2017.07.04-17.52.03:234][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2017.07.04-17.52.03:234][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2017.07.04-17.52.03:315][  0]LogAIModule: Creating AISystem for world Untitled
-[2017.07.04-17.52.03:416][  0]LogInit: XAudio2 using 'Headphones (Rift Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.07.04-17.52.03:467][  0]LogInit: FAudioDevice initialized.
-[2017.07.04-17.52.03:508][  0]LogDerivedDataCache: Saved boot cache 0.04s 90MB C:/Users/dan/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
-[2017.07.04-17.52.03:523][  0]LogInit: Texture streaming: Enabled
-[2017.07.04-17.52.03:581][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2017.07.04-17.52.03:726][  0]LogInit: Transaction tracking system initialized
-[2017.07.04-17.52.03:930][  0]BlueprintLog: New page: Editor Load
-[2017.07.04-17.52.04:576][  0]LocalizationService: Info Localization service is disabled
-[2017.07.04-17.52.05:035][  0]LogConsoleResponse:Display: 
-[2017.07.04-17.52.05:147][  0]LogFileCache: Scanning file cache for directory 'H:/TDAD/TDAD/Content/' took 0.01s
-[2017.07.04-17.52.05:147][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2017.07.04-17.52.05:147][  0]LogCook:Display: Mobile HDR setting 1
-[2017.07.04-17.52.05:832][  0]SourceControl: Info Source control is disabled
-[2017.07.04-17.52.05:832][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.07.04-17.52.05:833][  0]LightingResults: New page: Lighting Build
-[2017.07.04-17.52.05:865][  0]MapCheck: New page: Map Check
-[2017.07.04-17.52.05:865][  0]LightingResults: New page: Lighting Build
-[2017.07.04-17.52.06:020][  0]LogAIModule: Creating AISystem for world Untitled_1
-[2017.07.04-17.52.06:020][  0]LogActorComponent: RegisterComponentWithWorld: (/Temp/Untitled_1.Untitled_1:PersistentLevel.WorldSettings_1.StaticMeshComponent0) Trying to register component with IsPendingKill() == true. Aborting.
-[2017.07.04-17.52.06:023][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.07.04-17.52.06:035][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.07.04-17.52.06:073][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 37.528ms to complete.
-[2017.07.04-17.52.06:073][  0]LogFileHelpers: Loading map 'Template_Default' took 0.241
-[2017.07.04-17.52.06:195][  0]LogCollectionManager: Loaded 0 collections in 0.000585 seconds
-[2017.07.04-17.52.06:262][  0]LogFileCache: Scanning file cache for directory 'H:/TDAD/TDAD/Saved/Collections/' took 0.01s
-[2017.07.04-17.52.06:262][  0]LogFileCache: Scanning file cache for directory 'H:/TDAD/TDAD/Content/Developers/dan/Collections/' took 0.01s
-[2017.07.04-17.52.06:262][  0]LogFileCache: Scanning file cache for directory 'H:/TDAD/TDAD/Content/Collections/' took 0.01s
-[2017.07.04-17.52.06:262][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
-[2017.07.04-17.52.06:270][  0]LogContentBrowser: Native class hierarchy populated in 0.0074 seconds. Added 2329 classes and 491 folders.
-[2017.07.04-17.52.06:310][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2017.07.04-17.52.06:343][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2017.07.04-17.52.06:373][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2017.07.04-17.52.06:402][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2017.07.04-17.52.06:407][  0]LogSlate: Took 0.000298 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2017.07.04-17.52.06:409][  0]LogSlate: Took 0.000235 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2017.07.04-17.52.06:413][  0]LogSlate: Took 0.000237 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2017.07.04-17.52.06:496][  0]LogRenderer: Reallocating scene render targets to support 1208x576 NumSamples 1 (Frame:1).
-[2017.07.04-17.52.06:604][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2017.07.04-17.52.06:654][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2017.07.04-17.52.06:654][  0]LogLoad: (Engine Initialization) Total time: 12.46 seconds
-[2017.07.04-17.52.06:654][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.06 seconds
-[2017.07.04-17.52.06:654][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2017.07.04-17.52.06:654][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2017.07.04-17.52.06:994][  0]LogOcInput: OculusInput pre-init called
-[2017.07.04-17.52.07:010][  0]LogOcInput: OculusInput is initialized. Init status 0. Runtime version: 1.16.0
-[2017.07.04-17.52.07:010][  0]LogHMD: Starting GearVRController plugin
-[2017.07.04-17.52.07:028][  0]LogAssetRegistry: Asset discovery search completed in 7.8226 seconds
-[2017.07.04-17.52.07:030][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2017.07.04-17.52.07:030][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000023 seconds (updated 0 objects)
-[2017.07.04-17.52.07:033][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.07.05-20.39.23:961][  0]LogInit: Selected Device Profile: [Windows]
+[2017.07.05-20.39.23:961][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.07.05-20.39.23:983][  0]LogInit: Computer: DAN-PC
+[2017.07.05-20.39.23:983][  0]LogInit: User: dan
+[2017.07.05-20.39.23:983][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.07.05-20.39.23:983][  0]LogInit: High frequency timer resolution =3.897222 MHz
+[2017.07.05-20.39.23:983][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2017.07.05-20.39.23:983][  0]LogMemory: Platform Memory Stats for Windows
+[2017.07.05-20.39.23:983][  0]LogMemory: Process Physical Memory: 277.38 MB used, 277.38 MB peak
+[2017.07.05-20.39.23:983][  0]LogMemory: Process Virtual Memory: 264.64 MB used, 264.64 MB peak
+[2017.07.05-20.39.23:983][  0]LogMemory: Physical Memory: 9104.68 MB used,  23537.33 MB free, 32642.01 MB total
+[2017.07.05-20.39.23:983][  0]LogMemory: Virtual Memory: 676.40 MB used,  23537.33 MB free, 134217728.00 MB total
+[2017.07.05-20.39.24:714][  0]LogInit: Using OS detected language (en-US).
+[2017.07.05-20.39.24:714][  0]LogInit: Using OS detected locale (en-US).
+[2017.07.05-20.39.24:831][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2017.07.05-20.39.27:162][  0]LogD3D11RHI: D3D11 adapters:
+[2017.07.05-20.39.27:200][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 980 Ti' (Feature Level 11_0)
+[2017.07.05-20.39.27:200][  0]LogD3D11RHI:       6103/0/16321 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.07.05-20.39.27:228][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2017.07.05-20.39.27:228][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.07.05-20.39.27:231][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.07.05-20.39.27:231][  0]LogD3D11RHI:       0/0/16321 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.07.05-20.39.27:231][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.07.05-20.39.27:241][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.07.05-20.39.27:242][  0]LogD3D11RHI:     GPU DeviceId: 0x17c8 (for the marketing name, search the web for "GPU Device Id")
+[2017.07.05-20.39.27:242][  0]LogWindows: EnumDisplayDevices:
+[2017.07.05-20.39.27:242][  0]LogWindows:    0. 'NVIDIA GeForce GTX 980 Ti' (P:1 D:1)
+[2017.07.05-20.39.27:244][  0]LogWindows:    1. 'NVIDIA GeForce GTX 980 Ti' (P:0 D:1)
+[2017.07.05-20.39.27:245][  0]LogWindows:    2. 'NVIDIA GeForce GTX 980 Ti' (P:0 D:0)
+[2017.07.05-20.39.27:246][  0]LogWindows:    3. 'NVIDIA GeForce GTX 980 Ti' (P:0 D:0)
+[2017.07.05-20.39.27:247][  0]LogWindows:    4. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.07.05-20.39.27:249][  0]LogWindows:    5. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.07.05-20.39.27:250][  0]LogWindows:    6. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.07.05-20.39.27:251][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2017.07.05-20.39.27:251][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 980 Ti
+[2017.07.05-20.39.27:251][  0]LogD3D11RHI:   Driver Version: 382.33 (internal:22.21.13.8233, unified:382.33)
+[2017.07.05-20.39.27:251][  0]LogD3D11RHI:      Driver Date: 5-17-2017
+[2017.07.05-20.39.27:251][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.07.05-20.39.27:273][  0]LogD3D11RHI: Async texture creation enabled
+[2017.07.05-20.39.27:296][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.07.05-20.39.27:359][  0]LogShaderCompilers: Guid format shader working directory is 22 characters bigger than the processId version (../../../../TDAD/TDAD/Intermediate/Shaders/WorkingDirectory/14104/).
+[2017.07.05-20.39.27:359][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/dan/AppData/Local/Temp/UnrealShaderWorkingDir/D07F7C7D4EE43EDC4EC6A3914F3AC9B5/'.
+[2017.07.05-20.39.27:359][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.07.05-20.39.30:258][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.07.05-20.39.30:289][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.07.05-20.39.30:322][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.07.05-20.39.30:356][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.07.05-20.39.30:430][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.07.05-20.39.30:462][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.07.05-20.39.30:496][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.07.05-20.39.30:530][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.07.05-20.39.30:557][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.07.05-20.39.30:591][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.07.05-20.39.30:623][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.07.05-20.39.30:654][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.07.05-20.39.30:685][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.07.05-20.39.30:716][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.07.05-20.39.30:748][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.07.05-20.39.30:813][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.07.05-20.39.30:813][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.07.05-20.39.30:835][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.07.05-20.39.30:922][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.07.05-20.39.30:943][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.07.05-20.39.30:977][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.07.05-20.39.31:008][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.07.05-20.39.31:040][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.07.05-20.39.31:072][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.07.05-20.39.31:072][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.07.05-20.39.31:792][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.07.05-20.39.54:169][  0]LogDerivedDataCache: Loaded boot cache 22.38s 90MB C:/Users/dan/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.07.05-20.39.54:171][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/dan/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2017.07.05-20.39.54:172][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../TDAD/TDAD/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.07.05-20.39.54:172][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.07.05-20.39.54:172][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../TDAD/TDAD/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.07.05-20.39.54:172][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.07.05-20.39.54:199][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.07.05-20.39.54:211][  0]LogDerivedDataCache: Using Local data cache path C:/Users/dan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.07.05-20.39.54:227][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.07.05-20.39.54:231][  0]LogSlate: Using Freetype 2.6.0
+[2017.07.05-20.39.54:243][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.07.05-20.39.54:243][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.07.05-20.40.01:595][  0]LogInit: Selected Device Profile: [Windows]
+[2017.07.05-20.40.01:778][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.07.05-20.40.02:114][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.07.05-20.40.02:173][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.07.05-20.40.02:214][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.07.05-20.40.02:214][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.07.05-20.40.02:214][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.07.05-20.40.03:580][  0]LogNetVersion: TDAD , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 3237355875)
+[2017.07.05-20.40.03:681][  0]LogAssetRegistry: FAssetRegistry took 0.0316 seconds to start up
+[2017.07.05-20.40.03:761][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.058384 seconds
+[2017.07.05-20.40.03:770][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2017.07.05-20.40.03:770][  0]LogUObjectAllocator: 7260416 out of 0 bytes used by permanent object pool.
+[2017.07.05-20.40.03:770][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.07.05-20.40.03:825][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.07.05-20.40.07:441][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.07.05-20.40.07:473][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.07.05-20.40.07:987][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.07.05-20.40.08:381][  0]SourceControl: Info Source control is disabled
+[2017.07.05-20.40.19:874][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.07.05-20.40.20:606][  0]LogEngine: Initializing Engine...
+[2017.07.05-20.40.29:918][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2017.07.05-20.40.29:924][  0]LogHMD: Oculus plugin initialized. Version: 4.16.2-3514769+++UE4+Release-4.16, LibOVR: 1.16.0, SDK: 1.12.0, built Jun 29 2017, 02:10:56
+[2017.07.05-20.40.30:352][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.07.05-20.40.30:352][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.07.05-20.40.30:501][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.07.05-20.40.30:650][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.05-20.40.30:707][  0]LogInit: FAudioDevice initialized.
+[2017.07.05-20.40.30:772][  0]LogDerivedDataCache: Saved boot cache 0.06s 90MB C:/Users/dan/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.07.05-20.40.30:795][  0]LogInit: Texture streaming: Enabled
+[2017.07.05-20.40.30:874][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.07.05-20.40.31:128][  0]LogInit: Transaction tracking system initialized
+[2017.07.05-20.40.31:404][  0]BlueprintLog: New page: Editor Load
+[2017.07.05-20.40.32:261][  0]LocalizationService: Info Localization service is disabled
+[2017.07.05-20.40.32:907][  0]LogConsoleResponse:Display: 
+[2017.07.05-20.40.33:330][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.07.05-20.40.33:331][  0]LogCook:Display: Mobile HDR setting 1
+[2017.07.05-20.40.33:383][  0]LogFileCache: Scanning file cache for directory 'H:/TDAD/TDAD/Content/' took 0.02s
+[2017.07.05-20.40.35:732][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.07.05-20.40.35:737][  0]LightingResults: New page: Lighting Build
+[2017.07.05-20.40.35:769][  0]MapCheck: New page: Map Check
+[2017.07.05-20.40.35:769][  0]LightingResults: New page: Lighting Build
+[2017.07.05-20.40.36:021][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2017.07.05-20.40.36:021][  0]LogActorComponent: RegisterComponentWithWorld: (/Temp/Untitled_1.Untitled_1:PersistentLevel.WorldSettings_1.StaticMeshComponent0) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.07.05-20.40.36:049][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.07.05-20.40.36:065][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.07.05-20.40.36:098][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 32.764ms to complete.
+[2017.07.05-20.40.36:098][  0]LogFileHelpers: Loading map 'Template_Default' took 0.367
+[2017.07.05-20.40.36:203][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.07.05-20.40.36:325][  0]LogCollectionManager: Loaded 0 collections in 0.000977 seconds
+[2017.07.05-20.40.36:407][  0]LogFileCache: Scanning file cache for directory 'H:/TDAD/TDAD/Saved/Collections/' took 0.01s
+[2017.07.05-20.40.36:407][  0]LogFileCache: Scanning file cache for directory 'H:/TDAD/TDAD/Content/Developers/dan/Collections/' took 0.01s
+[2017.07.05-20.40.36:407][  0]LogFileCache: Scanning file cache for directory 'H:/TDAD/TDAD/Content/Collections/' took 0.01s
+[2017.07.05-20.40.36:407][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.07.05-20.40.36:417][  0]LogContentBrowser: Native class hierarchy populated in 0.0079 seconds. Added 2329 classes and 491 folders.
+[2017.07.05-20.40.36:456][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.07.05-20.40.36:700][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.07.05-20.40.36:731][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.07.05-20.40.36:857][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.07.05-20.40.38:205][  0]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2017.07.05-20.40.38:291][  0]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.TDAD
+[2017.07.05-20.40.38:291][  0]LogTemp: CWD: H:\UE_4.16\Engine\Binaries\DotNET\IOS
+[2017.07.05-20.40.38:291][  0]LogTemp: Initial Dir: H:\UE_4.16
+[2017.07.05-20.40.38:291][  0]LogTemp: Env CWD: H:\UE_4.16\Engine\Binaries\DotNET\IOS
+[2017.07.05-20.40.38:291][  0]LogTemp: BranchPath = DAN-PC/H/UE_4.16/Engine/Binaries --- GameBranchPath = DAN-PC/H/UE_4.16/Engine/Binaries
+[2017.07.05-20.40.38:291][  0]LogTemp: IPP ERROR: Could not find provision directory 'C:\Users\dan\AppData\Local/Apple Computer/MobileDevice/Provisioning Profiles/'.
+[2017.07.05-20.40.38:291][  0]LogSlate: Took 0.012131 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.07.05-20.40.38:300][  0]LogSlate: Took 0.005094 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.07.05-20.40.38:312][  0]LogSlate: Took 0.004793 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.07.05-20.40.38:435][  0]LogRenderer: Reallocating scene render targets to support 1208x576 NumSamples 1 (Frame:1).
+[2017.07.05-20.40.38:602][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.07.05-20.40.38:657][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.07.05-20.40.38:657][  0]LogLoad: (Engine Initialization) Total time: 79.18 seconds
+[2017.07.05-20.40.38:657][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.12 seconds
+[2017.07.05-20.40.38:657][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.07.05-20.40.38:657][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.07.05-20.40.38:667][  0]LogOcInput: OculusInput pre-init called
+[2017.07.05-20.40.38:686][  0]LogOcInput: OculusInput is initialized. Init status 0. Runtime version: 1.16.0
+[2017.07.05-20.40.38:686][  0]LogHMD: Starting GearVRController plugin
+[2017.07.05-20.40.38:710][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.07.05-20.40.38:765][  0]LogSlate: Took 0.004213 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.07.05-20.40.38:824][  1]LogAssetRegistry: Asset discovery search completed in 35.1655 seconds
+[2017.07.05-20.40.38:827][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.07.05-20.40.38:827][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000462 seconds (updated 0 objects)
+[2017.07.05-20.40.39:172][ 38]SourceControl: Info On branch master
+[2017.07.05-20.40.39:172][ 38]SourceControl: Info Your branch is up-to-date with 'origin/master'.
+[2017.07.05-20.40.39:172][ 38]SourceControl: Info Changes not staged for commit:
+[2017.07.05-20.40.39:172][ 38]SourceControl: Info   (use "git add <file>..." to update what will be committed)
+[2017.07.05-20.40.39:172][ 38]SourceControl: Info   (use "git checkout -- <file>..." to discard changes in working directory)
+[2017.07.05-20.40.39:172][ 38]SourceControl: Info 	modified:   TDAD/Content/FirstPersonBP/Blueprints/LevelAssets/Shop/Shop.uasset
+[2017.07.05-20.40.39:172][ 38]SourceControl: Info 	modified:   TDAD/Content/FirstPersonBP/Maps/OfficeBlockout.umap
+[2017.07.05-20.40.39:172][ 38]SourceControl: Info 	modified:   TDAD/Intermediate/CachedAssetRegistry.bin
+[2017.07.05-20.40.39:172][ 38]SourceControl: Info 	modified:   TDAD/Saved/Config/Windows/Editor.ini
+[2017.07.05-20.40.39:172][ 38]SourceControl: Info 	modified:   TDAD/Saved/Config/Windows/EditorPerProjectUserSettings.ini
+[2017.07.05-20.40.39:172][ 38]SourceControl: Info 	modified:   TDAD/Saved/Config/Windows/Engine.ini
+[2017.07.05-20.40.39:173][ 38]SourceControl: Info 	modified:   TDAD/Saved/Logs/TDAD.log
+[2017.07.05-20.40.39:173][ 38]SourceControl: Info Untracked files:
+[2017.07.05-20.40.39:173][ 38]SourceControl: Info   (use "git add <file>..." to include in what will be committed)
+[2017.07.05-20.40.39:173][ 38]SourceControl: Info 	TDAD/Saved/AutoScreenshot.png
+[2017.07.05-20.40.39:173][ 38]SourceControl: Info 	TDAD/Saved/Autosaves/
+[2017.07.05-20.40.39:173][ 38]SourceControl: Info 	TDAD/Saved/Backup/
+[2017.07.05-20.40.39:173][ 38]SourceControl: Info 	TDAD/Saved/Config/CrashReportClient/UE4CC-Windows-837660684FEC1FCAC036258882B90655/
+[2017.07.05-20.40.39:173][ 38]SourceControl: Info 	TDAD/Saved/Config/Windows/SourceControlSettings.ini
+[2017.07.05-20.40.39:173][ 38]SourceControl: Info 	TDAD/Saved/Config/WorldState/
+[2017.07.05-20.40.39:173][ 38]SourceControl: Info 	TDAD/Saved/Logs/TDAD-backup-2017.07.05-21.39.22.log
+[2017.07.05-20.40.39:173][ 38]SourceControl: Info no changes added to commit (use "git add" and/or "git commit -a")
+[2017.07.05-20.40.39:701][ 98]LogSlate: Took 0.000211 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.07.05-20.59.19:987][507]LogSlate: Took 0.000188 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.07.05-20.59.20:252][507]LogBlueprint:Warning: [Compiler Ue4ASP_Character] Warning InputAction Event references unknown Action 'Crouch' for  InputAction Crouch
+[2017.07.05-20.59.20:255][507]LogBlueprint:Warning: [Compiler Ue4ASP_Character] Warning [1200.78] Compile of Ue4ASP_Character successful, but with 1 Warning(s) [in 5 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.07.05-20.59.20:255][507]LogBlueprint:Warning: [Compiler Ue4ASP_Character] Warning [1200.78] Compile of Ue4ASP_Character successful, but with 2 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.07.05-20.59.20:255][507]LogBlueprint:Warning: [Compiler Ue4ASP_Character] Warning [1200.78] Compile of Ue4ASP_Character successful, but with 3 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.07.05-20.59.20:320][507]LogBlueprint:Warning: [Compiler Ue4ASP_Character] Warning InputAction Event references unknown Action 'Crouch' for  InputAction Crouch
+[2017.07.05-20.59.20:323][507]LogBlueprint:Warning: [Compiler Ue4ASP_Character] Warning [1200.85] Compile of Ue4ASP_Character successful, but with 1 Warning(s) [in 5 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.07.05-20.59.20:323][507]LogBlueprint:Warning: [Compiler Ue4ASP_Character] Warning [1200.85] Compile of Ue4ASP_Character successful, but with 2 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.07.05-20.59.20:324][507]LogBlueprint:Warning: [Compiler Ue4ASP_Character] Warning [1200.85] Compile of Ue4ASP_Character successful, but with 3 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.07.05-20.59.20:834][507]LogSlate: Took 0.000211 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.07.05-20.59.20:865][507]LogBlueprint:Warning: [Compiler FirstPersonCharacter] Warning InputAction Event references unknown Action 'ResetVR' for  InputAction ResetVR
+[2017.07.05-20.59.20:872][507]LogBlueprint:Warning: [Compiler FirstPersonCharacter] Warning [1201.40] Compile of FirstPersonCharacter successful, but with 1 Warning(s) [in 16 ms] (/Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter)
+[2017.07.05-20.59.20:873][507]LogBlueprint:Warning: [Compiler FirstPersonCharacter] Warning [1201.40] Compile of FirstPersonCharacter successful, but with 2 Warning(s) [in 0 ms] (/Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter)
+[2017.07.05-20.59.20:873][507]LogBlueprint:Warning: [Compiler FirstPersonCharacter] Warning [1201.40] Compile of FirstPersonCharacter successful, but with 3 Warning(s) [in 0 ms] (/Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter)
+[2017.07.05-20.59.20:917][507]LogBlueprint:Warning: [Compiler FirstPersonCharacter] Warning InputAction Event references unknown Action 'ResetVR' for  InputAction ResetVR
+[2017.07.05-20.59.20:924][507]LogBlueprint:Warning: [Compiler FirstPersonCharacter] Warning [1201.45] Compile of FirstPersonCharacter successful, but with 1 Warning(s) [in 13 ms] (/Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter)
+[2017.07.05-20.59.20:924][507]LogBlueprint:Warning: [Compiler FirstPersonCharacter] Warning [1201.45] Compile of FirstPersonCharacter successful, but with 2 Warning(s) [in 0 ms] (/Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter)
+[2017.07.05-20.59.20:926][507]LogBlueprint:Warning: [Compiler FirstPersonCharacter] Warning [1201.45] Compile of FirstPersonCharacter successful, but with 3 Warning(s) [in 0 ms] (/Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter)
+[2017.07.05-20.59.24:690][507]LogAIModule: Creating AISystem for world OfficeBlockout
+[2017.07.05-20.59.24:763][507]Cmd: MAP LOAD FILE="../../../../TDAD/TDAD/Content/FirstPersonBP/Maps/OfficeBlockout.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.07.05-20.59.24:763][507]LightingResults: New page: Lighting Build
+[2017.07.05-20.59.24:764][507]LoadErrors: New page: Loading map: OfficeBlockout.umap
+[2017.07.05-20.59.24:765][507]MapCheck: New page: Map Check
+[2017.07.05-20.59.24:765][507]LightingResults: New page: Lighting Build
+[2017.07.05-20.59.24:882][507]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.07.05-20.59.24:914][507]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.07.05-20.59.24:973][507]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 58.963ms to complete.
+[2017.07.05-20.59.24:974][507]LogFileHelpers: Loading map 'OfficeBlockout' took 0.213
+[2017.07.05-20.59.53:258][874]LogTemp: Repeting last play command: Selected Viewport
+[2017.07.05-20.59.53:318][874]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel.OfficeBlockout' with GeneratedClass '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel.OfficeBlockout'
+[2017.07.05-20.59.53:318][874]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.07.05-20.59.53:321][874]PIE: New page: PIE session: OfficeBlockout (Jul 5, 2017, 10:59:53 PM)
+[2017.07.05-20.59.53:321][874]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout
+[2017.07.05-20.59.55:343][874]LogPlayLevel: PIE: StaticDuplicateObject took: (2.021456s)
+[2017.07.05-20.59.55:343][874]LogAIModule: Creating AISystem for world OfficeBlockout
+[2017.07.05-20.59.55:344][874]LogPlayLevel: PIE: World Init took: (0.000757s)
+[2017.07.05-20.59.55:344][874]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout to /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout (2.022923s)
+[2017.07.05-20.59.55:459][874]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.05-20.59.55:494][874]LogInit: FAudioDevice initialized.
+[2017.07.05-20.59.55:541][874]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2017.07.05-20.59.55:552][874]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout up for play (max tick rate 0) at 2017.07.05-21.59.55
+[2017.07.05-20.59.55:556][874]LogWorld: Bringing up level for play took: 0.008612
+[2017.07.05-20.59.55:592][874]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0007 seconds. Added 11 classes and 0 folders.
+[2017.07.05-20.59.55:603][874]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout 2.029
+[2017.07.05-20.59.55:603][874]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel.OfficeBlockout' with GeneratedClass '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel.OfficeBlockout'
+[2017.07.05-20.59.55:655][875]LogCharacterMovement:Warning: GetSimulationTimeStep() - Max iterations 8 hit while remaining time 0.092587 > MaxSimulationTimeStep (0.050) for 'FirstPersonCharacter_C_1', movement 'Walking'
+[2017.07.05-20.59.55:656][875]LogBlueprintUserMessages: [StreetSpawnerTrigger_211] StreetSpawners Activated
+[2017.07.05-20.59.59:263][298]LogBlueprintUserMessages: [EnemySpawner_239] spawning stopped
+[2017.07.05-20.59.59:263][298]LogBlueprintUserMessages: [EnemySpawner4] spawning stopped
+[2017.07.05-20.59.59:263][298]LogBlueprintUserMessages: [EnemySpawner2_1688] spawning stopped
+[2017.07.05-20.59.59:263][298]LogBlueprintUserMessages: [EnemySpawner5] spawning stopped
+[2017.07.05-20.59.59:263][298]LogBlueprintUserMessages: [EnemySpawner3_2543] spawning stopped
+[2017.07.05-21.00.01:572][565]LogBlueprintUserMessages: [None] 80
+[2017.07.05-21.00.01:955][610]LogBlueprintUserMessages: [None] 60
+[2017.07.05-21.00.02:055][622]LogCharacterMovement: FirstPersonCharacter_C_1 is stuck and failed to move! Velocity: X=5.10 Y=-23.51 Z=0.00 Location: X=-2131.52 Y=14.16 Z=268.11 Normal: X=0.93 Y=0.36 Z=0.00 PenetrationDepth:0.004 Actor:EditorCube15_9 Component:StaticMeshComponent0 BoneName:None (0 other events since notify)
+[2017.07.05-21.00.02:072][624]LogCharacterMovement: EnemyCharacter1_C_2 is stuck and failed to move! Velocity: X=3.13 Y=-16.78 Z=0.00 Location: X=-2150.53 Y=116.05 Z=272.31 Normal: X=-0.09 Y=1.00 Z=0.00 PenetrationDepth:0.162 Actor:FirstPersonCharacter_C_1 Component:CollisionCylinder BoneName:None (0 other events since notify)
+[2017.07.05-21.00.02:191][638]LogBlueprintUserMessages: [None] 40
+[2017.07.05-21.00.02:310][652]LogBlueprintUserMessages: [None] 20
+[2017.07.05-21.00.02:542][679]LogScript:Warning: Attempted to access EnemyCharacter1_C_6 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_6 is pending kill
+	EnemyHealth_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemyCharacter1_C_6.EnemyHealth
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemyHealth.EnemyHealth_C:Take Damage:013D
+[2017.07.05-21.00.02:542][679]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_6 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_6 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_6 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_6 is pending kill
+[2017.07.05-21.00.02:749][697]LogScript:Warning: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+	InstantHitWeapon_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.InstantHitWeapon_C_0
+	Function /Game/FirstPersonBP/Blueprints/Weapons/InstantHitWeapon.InstantHitWeapon_C:Fire:0393
+[2017.07.05-21.00.02:749][697]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_BreakHitResult_HitActor from function: 'Fire' from node: Branch in graph: Fire in object: InstantHitWeapon with description: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+[2017.07.05-21.00.02:962][719]LogScript:Warning: Attempted to access EnemyCharacter1_C_0 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_0 is pending kill
+	EnemyHealth_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemyCharacter1_C_0.EnemyHealth
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemyHealth.EnemyHealth_C:Take Damage:013D
+[2017.07.05-21.00.02:962][719]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_0 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_0 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_0 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_0 is pending kill
+[2017.07.05-21.00.03:106][735]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.00.03:170][742]LogScript:Warning: Attempted to access EnemyCharacter1_C_1 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_1 is pending kill
+	EnemyHealth_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemyCharacter1_C_1.EnemyHealth
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemyHealth.EnemyHealth_C:Take Damage:013D
+[2017.07.05-21.00.03:170][742]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_1 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_1 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_1 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_1 is pending kill
+[2017.07.05-21.00.03:275][754]LogCharacterMovement: EnemyCharacter1_C_2 is stuck and failed to move! Velocity: X=12.11 Y=-106.69 Z=0.00 Location: X=-2136.28 Y=100.01 Z=272.31 Normal: X=-0.09 Y=1.00 Z=0.00 PenetrationDepth:0.722 Actor:FirstPersonCharacter_C_1 Component:CollisionCylinder BoneName:None (28 other events since notify)
+[2017.07.05-21.00.03:383][766]LogScript:Warning: Attempted to access EnemyCharacter1_C_2 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_2 is pending kill
+	EnemyHealth_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemyCharacter1_C_2.EnemyHealth
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemyHealth.EnemyHealth_C:Take Damage:013D
+[2017.07.05-21.00.03:383][766]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_2 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_2 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_2 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_2 is pending kill
+[2017.07.05-21.00.03:542][784]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.00.04:310][875]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.00.10:925][646]LogScript:Warning: Attempted to access EnemyCharacter1_C_7 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_7 is pending kill
+	EnemyHealth_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemyCharacter1_C_7.EnemyHealth
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemyHealth.EnemyHealth_C:Take Damage:013D
+[2017.07.05-21.00.10:925][646]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_7 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_7 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_7 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_7 is pending kill
+[2017.07.05-21.00.11:138][670]LogScript:Warning: Attempted to access EnemyCharacter1_C_13 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_13 is pending kill
+	EnemyHealth_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemyCharacter1_C_13.EnemyHealth
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemyHealth.EnemyHealth_C:Take Damage:013D
+[2017.07.05-21.00.11:138][670]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_13 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_13 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_13 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_13 is pending kill
+[2017.07.05-21.00.11:347][695]LogScript:Warning: Attempted to access EnemyCharacter1_C_14 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_14 is pending kill
+	EnemyHealth_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemyCharacter1_C_14.EnemyHealth
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemyHealth.EnemyHealth_C:Take Damage:013D
+[2017.07.05-21.00.11:347][695]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_14 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_14 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_14 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_14 is pending kill
+[2017.07.05-21.00.11:556][720]LogScript:Warning: Attempted to access EnemyCharacter1_C_5 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_5 is pending kill
+	EnemyHealth_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemyCharacter1_C_5.EnemyHealth
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemyHealth.EnemyHealth_C:Take Damage:013D
+[2017.07.05-21.00.11:556][720]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_5 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_5 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_5 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_5 is pending kill
+[2017.07.05-21.00.11:981][769]LogScript:Warning: Attempted to access EnemyCharacter1_C_4 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_4 is pending kill
+	EnemyHealth_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemyCharacter1_C_4.EnemyHealth
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemyHealth.EnemyHealth_C:Take Damage:013D
+[2017.07.05-21.00.11:981][769]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_4 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_4 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_4 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_4 is pending kill
+[2017.07.05-21.00.12:188][794]LogScript:Warning: Attempted to access EnemyCharacter1_C_9 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_9 is pending kill
+	EnemyHealth_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemyCharacter1_C_9.EnemyHealth
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemyHealth.EnemyHealth_C:Take Damage:013D
+[2017.07.05-21.00.12:188][794]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_9 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_9 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_9 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_9 is pending kill
+[2017.07.05-21.00.12:397][819]LogScript:Warning: Attempted to access EnemyCharacter1_C_12 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_12 is pending kill
+	EnemyHealth_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemyCharacter1_C_12.EnemyHealth
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemyHealth.EnemyHealth_C:Take Damage:013D
+[2017.07.05-21.00.12:397][819]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_12 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_12 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_12 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_12 is pending kill
+[2017.07.05-21.00.12:605][844]LogScript:Warning: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+	InstantHitWeapon_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.InstantHitWeapon_C_0
+	Function /Game/FirstPersonBP/Blueprints/Weapons/InstantHitWeapon.InstantHitWeapon_C:Fire:0393
+[2017.07.05-21.00.12:605][844]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_BreakHitResult_HitActor from function: 'Fire' from node: Branch in graph: Fire in object: InstantHitWeapon with description: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+[2017.07.05-21.00.12:814][869]LogScript:Warning: Attempted to access EnemyCharacter1_C_8 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_8 is pending kill
+	EnemyHealth_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemyCharacter1_C_8.EnemyHealth
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemyHealth.EnemyHealth_C:Take Damage:013D
+[2017.07.05-21.00.12:814][869]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_8 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_8 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_8 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_8 is pending kill
+[2017.07.05-21.00.13:022][894]LogScript:Warning: Attempted to access EnemyCharacter1_C_11 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_11 is pending kill
+	EnemyHealth_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemyCharacter1_C_11.EnemyHealth
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemyHealth.EnemyHealth_C:Take Damage:013D
+[2017.07.05-21.00.13:022][894]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_11 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_11 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_11 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_11 is pending kill
+[2017.07.05-21.00.13:231][919]LogScript:Warning: Attempted to access EnemyCharacter1_C_10 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_10 is pending kill
+	EnemyHealth_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemyCharacter1_C_10.EnemyHealth
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemyHealth.EnemyHealth_C:Take Damage:013D
+[2017.07.05-21.00.13:231][919]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_10 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_10 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_10 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_10 is pending kill
+[2017.07.05-21.00.13:438][944]LogScript:Warning: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+	InstantHitWeapon_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.InstantHitWeapon_C_0
+	Function /Game/FirstPersonBP/Blueprints/Weapons/InstantHitWeapon.InstantHitWeapon_C:Fire:0393
+[2017.07.05-21.00.13:439][944]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_BreakHitResult_HitActor from function: 'Fire' from node: Branch in graph: Fire in object: InstantHitWeapon with description: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+[2017.07.05-21.00.31:639][117]LogBlueprintUserMessages: [None] 5
+[2017.07.05-21.00.37:272][792]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel.OfficeBlockout' with GeneratedClass '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel.OfficeBlockout'
+[2017.07.05-21.00.37:309][792]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel.OfficeBlockout' with GeneratedClass '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel.OfficeBlockout'
+[2017.07.05-21.00.38:920][974]LogTemp: Repeting last play command: Selected Viewport
+[2017.07.05-21.00.38:935][974]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel.OfficeBlockout' with GeneratedClass '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel.OfficeBlockout'
+[2017.07.05-21.00.38:935][974]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.07.05-21.00.38:935][974]PIE: New page: PIE session: OfficeBlockout (Jul 5, 2017, 11:00:38 PM)
+[2017.07.05-21.00.38:935][974]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout
+[2017.07.05-21.00.39:124][974]LogPlayLevel: PIE: StaticDuplicateObject took: (0.189425s)
+[2017.07.05-21.00.39:125][974]LogAIModule: Creating AISystem for world OfficeBlockout
+[2017.07.05-21.00.39:125][974]LogPlayLevel: PIE: World Init took: (0.000699s)
+[2017.07.05-21.00.39:125][974]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout to /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout (0.190477s)
+[2017.07.05-21.00.39:239][974]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.05-21.00.39:276][974]LogInit: FAudioDevice initialized.
+[2017.07.05-21.00.39:308][974]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2017.07.05-21.00.39:314][974]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout up for play (max tick rate 0) at 2017.07.05-22.00.39
+[2017.07.05-21.00.39:315][974]LogWorld: Bringing up level for play took: 0.005343
+[2017.07.05-21.00.39:317][974]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout -0.257
+[2017.07.05-21.00.39:317][974]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel.OfficeBlockout' with GeneratedClass '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel.OfficeBlockout'
+[2017.07.05-21.00.39:338][975]LogCharacterMovement:Warning: GetSimulationTimeStep() - Max iterations 8 hit while remaining time 0.092610 > MaxSimulationTimeStep (0.050) for 'FirstPersonCharacter_C_1', movement 'Walking'
+[2017.07.05-21.00.39:338][975]LogBlueprintUserMessages: [StreetSpawnerTrigger_211] StreetSpawners Activated
+[2017.07.05-21.00.42:950][397]LogBlueprintUserMessages: [EnemySpawner_239] spawning stopped
+[2017.07.05-21.00.42:950][397]LogBlueprintUserMessages: [EnemySpawner4] spawning stopped
+[2017.07.05-21.00.42:950][397]LogBlueprintUserMessages: [EnemySpawner2_1688] spawning stopped
+[2017.07.05-21.00.42:950][397]LogBlueprintUserMessages: [EnemySpawner5] spawning stopped
+[2017.07.05-21.00.42:950][397]LogBlueprintUserMessages: [EnemySpawner3_2543] spawning stopped
+[2017.07.05-21.00.49:306][135]LogBlueprintUserMessages: [None] 80
+[2017.07.05-21.00.57:076][  6]LogScript:Warning: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+	InstantHitWeapon_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.InstantHitWeapon_C_0
+	Function /Game/FirstPersonBP/Blueprints/Weapons/InstantHitWeapon.InstantHitWeapon_C:Fire:0393
+[2017.07.05-21.00.57:076][  6]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_BreakHitResult_HitActor from function: 'Fire' from node: Branch in graph: Fire in object: InstantHitWeapon with description: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+[2017.07.05-21.00.57:294][ 29]LogScript:Warning: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+	InstantHitWeapon_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.InstantHitWeapon_C_0
+	Function /Game/FirstPersonBP/Blueprints/Weapons/InstantHitWeapon.InstantHitWeapon_C:Fire:0393
+[2017.07.05-21.00.57:294][ 29]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_BreakHitResult_HitActor from function: 'Fire' from node: Branch in graph: Fire in object: InstantHitWeapon with description: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+[2017.07.05-21.00.57:505][ 52]LogScript:Warning: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+	InstantHitWeapon_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.InstantHitWeapon_C_0
+	Function /Game/FirstPersonBP/Blueprints/Weapons/InstantHitWeapon.InstantHitWeapon_C:Fire:0393
+[2017.07.05-21.00.57:505][ 52]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_BreakHitResult_HitActor from function: 'Fire' from node: Branch in graph: Fire in object: InstantHitWeapon with description: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+[2017.07.05-21.00.57:716][ 76]LogScript:Warning: Attempted to access EnemyCharacter1_C_10 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_10 is pending kill
+	EnemyHealth_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemyCharacter1_C_10.EnemyHealth
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemyHealth.EnemyHealth_C:Take Damage:013D
+[2017.07.05-21.00.57:716][ 76]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_10 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_10 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_10 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_10 is pending kill
+[2017.07.05-21.00.57:926][100]LogScript:Warning: Attempted to access EnemyCharacter1_C_12 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_12 is pending kill
+	EnemyHealth_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemyCharacter1_C_12.EnemyHealth
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemyHealth.EnemyHealth_C:Take Damage:013D
+[2017.07.05-21.00.57:926][100]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_12 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_12 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_12 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_12 is pending kill
+[2017.07.05-21.00.58:137][123]LogScript:Warning: Attempted to access EnemyCharacter1_C_2 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_2 is pending kill
+	EnemyHealth_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemyCharacter1_C_2.EnemyHealth
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemyHealth.EnemyHealth_C:Take Damage:013D
+[2017.07.05-21.00.58:137][123]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_2 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_2 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_2 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_2 is pending kill
+[2017.07.05-21.00.58:352][148]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_9 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_9 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_9 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_9 is pending kill
+[2017.07.05-21.00.58:566][171]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_11 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_11 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_11 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_11 is pending kill
+[2017.07.05-21.00.58:766][191]LogBlueprintUserMessages: [None] 60
+[2017.07.05-21.00.58:776][192]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_5 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_5 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_5 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_5 is pending kill
+[2017.07.05-21.00.58:867][202]LogBlueprintUserMessages: [None] 40
+[2017.07.05-21.00.58:993][216]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_13 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_13 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_13 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_13 is pending kill
+[2017.07.05-21.00.59:068][225]LogBlueprintUserMessages: [None] 20
+[2017.07.05-21.00.59:204][241]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_7 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_7 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_7 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_7 is pending kill
+[2017.07.05-21.00.59:356][259]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.00.59:415][266]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_4 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_4 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_4 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_4 is pending kill
+[2017.07.05-21.00.59:623][291]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_14 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_14 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_14 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_14 is pending kill
+[2017.07.05-21.00.59:832][316]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_6 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_6 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_6 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_6 is pending kill
+[2017.07.05-21.01.00:040][341]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_8 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_8 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_8 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_8 is pending kill
+[2017.07.05-21.01.00:249][366]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_1 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_1 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_1 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_1 is pending kill
+[2017.07.05-21.01.00:457][391]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_0 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_0 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_0 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_0 is pending kill
+[2017.07.05-21.01.00:667][416]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_3 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_3 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_3 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_3 is pending kill
+[2017.07.05-21.01.00:753][426]LogBlueprintUserMessages: [EnemySpawner3_2543] Wave Complete
+[2017.07.05-21.01.00:753][426]LogBlueprintUserMessages: [EnemySpawner3_2543] 1
+[2017.07.05-21.01.00:754][426]LogBlueprintUserMessages: [EnemySpawner5] Wave Complete
+[2017.07.05-21.01.00:754][426]LogBlueprintUserMessages: [EnemySpawner5] 2
+[2017.07.05-21.01.00:755][426]LogBlueprintUserMessages: [EnemySpawner4] Wave Complete
+[2017.07.05-21.01.00:755][426]LogBlueprintUserMessages: [EnemySpawner4] 1
+[2017.07.05-21.01.00:755][426]LogScriptCore:Warning: Script Msg: Attempted to access index 3 from array ShopSpawners of length 3!
+[2017.07.05-21.01.00:755][426]LogScript:Warning: Accessed None trying to read property CallFunc_Array_Get_Item
+	MasterSpawner_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemySpawner4
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemySpawning/StreetSpawner/MasterSpawner.MasterSpawner_C:ExecuteUbergraph_MasterSpawner:020C
+[2017.07.05-21.01.00:755][426]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_Array_Get_Item from function: 'ExecuteUbergraph_MasterSpawner' from node: Spawn Shop in graph: EventGraph in object: MasterSpawner with description: Accessed None trying to read property CallFunc_Array_Get_Item
+[2017.07.05-21.01.00:755][426]LogBlueprintUserMessages: [EnemySpawner2_1688] Wave Complete
+[2017.07.05-21.01.00:755][426]LogBlueprintUserMessages: [EnemySpawner2_1688] 3
+[2017.07.05-21.01.00:755][426]LogScriptCore:Warning: Script Msg: Attempted to access index 3 from array ShopSpawners of length 3!
+[2017.07.05-21.01.00:755][426]LogScript:Warning: Accessed None trying to read property CallFunc_Array_Get_Item
+	MasterSpawner_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemySpawner2_1688
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemySpawning/StreetSpawner/MasterSpawner.MasterSpawner_C:ExecuteUbergraph_MasterSpawner:020C
+[2017.07.05-21.01.00:755][426]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_Array_Get_Item from function: 'ExecuteUbergraph_MasterSpawner' from node: Spawn Shop in graph: EventGraph in object: MasterSpawner with description: Accessed None trying to read property CallFunc_Array_Get_Item
+[2017.07.05-21.01.00:755][426]LogBlueprintUserMessages: [EnemySpawner_239] Wave Complete
+[2017.07.05-21.01.00:755][426]LogBlueprintUserMessages: [EnemySpawner_239] 2
+[2017.07.05-21.01.00:755][426]LogScriptCore:Warning: Script Msg: Attempted to access index 3 from array ShopSpawners of length 3!
+[2017.07.05-21.01.00:755][426]LogScript:Warning: Accessed None trying to read property CallFunc_Array_Get_Item
+	MasterSpawner_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemySpawner_239
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemySpawning/StreetSpawner/MasterSpawner.MasterSpawner_C:ExecuteUbergraph_MasterSpawner:020C
+[2017.07.05-21.01.00:755][426]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_Array_Get_Item from function: 'ExecuteUbergraph_MasterSpawner' from node: Spawn Shop in graph: EventGraph in object: MasterSpawner with description: Accessed None trying to read property CallFunc_Array_Get_Item
+[2017.07.05-21.01.10:588][603]LogBlueprintUserMessages: [ReceptionAreaSpawnerTrigger_108] ReceptionSpawnersActivated
+[2017.07.05-21.01.18:593][549]LogBlueprintUserMessages: [ReceptionAreaSpawners_410] spawning stopped
+[2017.07.05-21.01.18:627][553]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.01.18:697][561]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.01.19:598][665]LogBlueprintUserMessages: [ReceptionAreaSpawners2] spawning stopped
+[2017.07.05-21.01.30:949][942]LogBlueprintUserMessages: [EnemySpawner4] spawning stopped
+[2017.07.05-21.01.30:949][942]LogBlueprintUserMessages: [EnemySpawner2_1688] spawning stopped
+[2017.07.05-21.01.31:943][ 47]LogBlueprintUserMessages: [EnemySpawner3_2543] spawning stopped
+[2017.07.05-21.01.31:943][ 47]LogBlueprintUserMessages: [EnemySpawner5] spawning stopped
+[2017.07.05-21.01.31:944][ 47]LogBlueprintUserMessages: [EnemySpawner_239] spawning stopped
+[2017.07.05-21.01.33:218][187]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_29 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_29 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_29 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_29 is pending kill
+[2017.07.05-21.01.33:956][262]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.01.34:303][297]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.01.34:369][304]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_27 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_27 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_27 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_27 is pending kill
+[2017.07.05-21.01.34:580][326]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_18 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_18 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_18 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_18 is pending kill
+[2017.07.05-21.01.34:735][342]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.01.34:790][348]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_16 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_16 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_16 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_16 is pending kill
+[2017.07.05-21.01.34:889][358]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.01.35:006][370]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_15 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_15 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_15 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_15 is pending kill
+[2017.07.05-21.01.35:111][380]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.01.35:193][388]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.01.35:226][391]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_21 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_21 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_21 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_21 is pending kill
+[2017.07.05-21.01.35:438][414]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_26 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_26 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_26 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_26 is pending kill
+[2017.07.05-21.01.35:600][432]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.01.35:648][437]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_25 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_25 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_25 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_25 is pending kill
+[2017.07.05-21.01.35:753][449]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.01.35:863][461]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_28 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_28 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_28 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_28 is pending kill
+[2017.07.05-21.01.35:947][471]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.01.35:971][474]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.01.36:072][486]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_17 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_17 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_17 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_17 is pending kill
+[2017.07.05-21.01.36:282][511]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_19 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_19 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_19 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_19 is pending kill
+[2017.07.05-21.01.36:449][531]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.01.36:493][536]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_22 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_22 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_22 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_22 is pending kill
+[2017.07.05-21.01.36:568][545]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.01.36:708][561]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_20 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_20 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_20 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_20 is pending kill
+[2017.07.05-21.01.36:794][571]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.01.36:923][586]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_24 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_24 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_24 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_24 is pending kill
+[2017.07.05-21.01.37:136][611]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_23 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_23 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_23 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_23 is pending kill
+[2017.07.05-21.01.37:346][636]LogScript:Warning: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+	InstantHitWeapon_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.InstantHitWeapon_C_0
+	Function /Game/FirstPersonBP/Blueprints/Weapons/InstantHitWeapon.InstantHitWeapon_C:Fire:0393
+[2017.07.05-21.01.37:346][636]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_BreakHitResult_HitActor from function: 'Fire' from node: Branch in graph: Fire in object: InstantHitWeapon with description: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+[2017.07.05-21.01.37:554][661]LogScript:Warning: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+	InstantHitWeapon_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.InstantHitWeapon_C_0
+	Function /Game/FirstPersonBP/Blueprints/Weapons/InstantHitWeapon.InstantHitWeapon_C:Fire:0393
+[2017.07.05-21.01.37:554][661]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_BreakHitResult_HitActor from function: 'Fire' from node: Branch in graph: Fire in object: InstantHitWeapon with description: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+[2017.07.05-21.01.42:314][230]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.01.43:101][324]LogCharacterMovement: EnemyCharacter1_C_31 is stuck and failed to move! Velocity: X=-65.94 Y=-106.82 Z=0.00 Location: X=-238.76 Y=1709.44 Z=272.38 Normal: X=0.39 Y=0.92 Z=0.00 PenetrationDepth:1.075 Actor:FirstPersonCharacter_C_1 Component:CollisionCylinder BoneName:None (0 other events since notify)
+[2017.07.05-21.01.43:453][366]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.01.44:058][438]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_31 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_31 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_31 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_31 is pending kill
+[2017.07.05-21.01.44:231][459]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.01.44:265][463]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_32 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_32 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_32 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_32 is pending kill
+[2017.07.05-21.01.44:474][488]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_30 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_30 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_30 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_30 is pending kill
+[2017.07.05-21.01.44:499][491]LogBlueprintUserMessages: [ReceptionAreaSpawners_410] Wave Complete
+[2017.07.05-21.01.44:499][491]LogBlueprintUserMessages: [ReceptionAreaSpawners2] Wave Complete
+[2017.07.05-21.01.44:549][497]LogBlueprintUserMessages: [EnemySpawner3_2543] Wave Complete
+[2017.07.05-21.01.44:549][497]LogBlueprintUserMessages: [EnemySpawner3_2543] 3
+[2017.07.05-21.01.44:549][497]LogScriptCore:Warning: Script Msg: Attempted to access index 3 from array ShopSpawners of length 3!
+[2017.07.05-21.01.44:549][497]LogScript:Warning: Accessed None trying to read property CallFunc_Array_Get_Item
+	MasterSpawner_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemySpawner3_2543
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemySpawning/StreetSpawner/MasterSpawner.MasterSpawner_C:ExecuteUbergraph_MasterSpawner:020C
+[2017.07.05-21.01.44:549][497]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_Array_Get_Item from function: 'ExecuteUbergraph_MasterSpawner' from node: Spawn Shop in graph: EventGraph in object: MasterSpawner with description: Accessed None trying to read property CallFunc_Array_Get_Item
+[2017.07.05-21.01.44:549][497]LogBlueprintUserMessages: [EnemySpawner5] Wave Complete
+[2017.07.05-21.01.44:549][497]LogBlueprintUserMessages: [EnemySpawner5] 2
+[2017.07.05-21.01.44:550][497]LogBlueprintUserMessages: [EnemySpawner_239] Wave Complete
+[2017.07.05-21.01.44:550][497]LogBlueprintUserMessages: [EnemySpawner_239] 3
+[2017.07.05-21.01.44:550][497]LogScriptCore:Warning: Script Msg: Attempted to access index 3 from array ShopSpawners of length 3!
+[2017.07.05-21.01.44:550][497]LogScript:Warning: Accessed None trying to read property CallFunc_Array_Get_Item
+	MasterSpawner_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemySpawner_239
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemySpawning/StreetSpawner/MasterSpawner.MasterSpawner_C:ExecuteUbergraph_MasterSpawner:020C
+[2017.07.05-21.01.44:550][497]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_Array_Get_Item from function: 'ExecuteUbergraph_MasterSpawner' from node: Spawn Shop in graph: EventGraph in object: MasterSpawner with description: Accessed None trying to read property CallFunc_Array_Get_Item
+[2017.07.05-21.01.44:550][497]LogBlueprintUserMessages: [EnemySpawner2_1688] Wave Complete
+[2017.07.05-21.01.44:550][497]LogBlueprintUserMessages: [EnemySpawner2_1688] 1
+[2017.07.05-21.01.44:550][497]LogScriptCore:Warning: Script Msg: Attempted to access index 3 from array ShopSpawners of length 3!
+[2017.07.05-21.01.44:550][497]LogScript:Warning: Accessed None trying to read property CallFunc_Array_Get_Item
+	MasterSpawner_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.EnemySpawner2_1688
+	Function /Game/FirstPersonBP/Blueprints/Enemies/EnemySpawning/StreetSpawner/MasterSpawner.MasterSpawner_C:ExecuteUbergraph_MasterSpawner:020C
+[2017.07.05-21.01.44:550][497]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_Array_Get_Item from function: 'ExecuteUbergraph_MasterSpawner' from node: Spawn Shop in graph: EventGraph in object: MasterSpawner with description: Accessed None trying to read property CallFunc_Array_Get_Item
+[2017.07.05-21.01.44:550][497]LogBlueprintUserMessages: [EnemySpawner4] Wave Complete
+[2017.07.05-21.01.44:550][497]LogBlueprintUserMessages: [EnemySpawner4] 3
+[2017.07.05-21.01.44:682][513]LogScript:Warning: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+	InstantHitWeapon_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.InstantHitWeapon_C_0
+	Function /Game/FirstPersonBP/Blueprints/Weapons/InstantHitWeapon.InstantHitWeapon_C:Fire:0393
+[2017.07.05-21.01.44:682][513]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_BreakHitResult_HitActor from function: 'Fire' from node: Branch in graph: Fire in object: InstantHitWeapon with description: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+[2017.07.05-21.01.59:122][244]LogBlueprintUserMessages: [GroundFloorLeftTrigger_186] GFloorLSpawners Activated
+[2017.07.05-21.02.01:020][471]LogBlueprintUserMessages: [Shop_C_2] Press E to interact
+[2017.07.05-21.02.01:037][473]LogBlueprintUserMessages: [Shop_C_2] Press E to interact
+[2017.07.05-21.02.01:281][502]LogBlueprintUserMessages: [Shop_C_2] Shop Opened
+[2017.07.05-21.02.05:637][  9]LogScript:Warning: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+	G36C_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.G36C_C_0
+	Function /Game/FirstPersonBP/Blueprints/Weapons/InstantHitWeapon.InstantHitWeapon_C:Fire:0393
+[2017.07.05-21.02.05:637][  9]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_BreakHitResult_HitActor from function: 'Fire' from node: Branch in graph: Fire in object: InstantHitWeapon with description: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+[2017.07.05-21.02.06:835][146]LogScript:Warning: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+	G36C_C /Game/FirstPersonBP/Maps/UEDPIE_0_OfficeBlockout.OfficeBlockout:PersistentLevel.G36C_C_0
+	Function /Game/FirstPersonBP/Blueprints/Weapons/InstantHitWeapon.InstantHitWeapon_C:Fire:0393
+[2017.07.05-21.02.06:835][146]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_BreakHitResult_HitActor from function: 'Fire' from node: Branch in graph: Fire in object: InstantHitWeapon with description: Accessed None trying to read property CallFunc_BreakHitResult_HitActor
+[2017.07.05-21.02.07:131][181]LogBlueprintUserMessages: [GroundFloorLeftSpawner2_1562] spawning stopped
+[2017.07.05-21.02.08:124][295]LogBlueprintUserMessages: [GroundFloorLeftSpawner_821] spawning stopped
+[2017.07.05-21.02.10:353][554]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.02.10:640][587]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_33 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_33 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_33 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_33 is pending kill
+[2017.07.05-21.02.11:317][662]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.02.11:497][681]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_34 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_34 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_34 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_34 is pending kill
+[2017.07.05-21.02.12:355][779]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_35 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_35 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_35 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_35 is pending kill
+[2017.07.05-21.02.13:211][876]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_36 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_36 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_36 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_36 is pending kill
+[2017.07.05-21.02.15:592][145]LogBlueprintUserMessages: [ReceptionAreaSpawners2] spawning stopped
+[2017.07.05-21.02.15:592][145]LogBlueprintUserMessages: [ReceptionAreaSpawners_410] spawning stopped
+[2017.07.05-21.02.15:944][186]LogBlueprintUserMessages: [EnemySpawner5] spawning stopped
+[2017.07.05-21.02.15:944][186]LogBlueprintUserMessages: [EnemySpawner3_2543] spawning stopped
+[2017.07.05-21.02.16:945][298]LogBlueprintUserMessages: [EnemySpawner_239] spawning stopped
+[2017.07.05-21.02.16:945][298]LogBlueprintUserMessages: [EnemySpawner4] spawning stopped
+[2017.07.05-21.02.16:945][298]LogBlueprintUserMessages: [EnemySpawner2_1688] spawning stopped
+[2017.07.05-21.02.20:774][731]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.02.21:395][797]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_37 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_37 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_37 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_37 is pending kill
+[2017.07.05-21.02.21:454][803]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.02.22:243][891]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_38 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_38 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_38 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_38 is pending kill
+[2017.07.05-21.02.22:732][947]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.02.23:094][987]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_39 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_39 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_39 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_39 is pending kill
+[2017.07.05-21.02.23:257][  5]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.02.23:536][ 36]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.02.23:690][ 52]LogCharacterMovement: EnemyCharacter1_C_40 is stuck and failed to move! Velocity: X=-28.37 Y=19.75 Z=0.00 Location: X=2625.12 Y=2903.34 Z=265.05 Normal: X=0.82 Y=-0.57 Z=0.00 PenetrationDepth:0.016 Actor:FirstPersonCharacter_C_1 Component:CollisionCylinder BoneName:None (0 other events since notify)
+[2017.07.05-21.02.23:766][ 61]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.02.23:993][ 84]LogCharacterMovement: FirstPersonCharacter_C_1 is stuck and failed to move! Velocity: X=11.41 Y=16.23 Z=0.00 Location: X=2543.33 Y=2961.06 Z=261.05 Normal: X=-0.82 Y=0.58 Z=0.00 PenetrationDepth:0.117 Actor:EnemyCharacter1_C_40 Component:CollisionCylinder BoneName:None (0 other events since notify)
+[2017.07.05-21.02.24:376][127]PIE:Error: Error Blueprint Runtime Error: Attempted to access EnemyCharacter1_C_47 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_47 is pending kill from function: 'Take Damage' from node: Return Node in graph: Take Damage in object: EnemyHealth with description: Attempted to access EnemyCharacter1_C_47 via property K2Node_DynamicCast_AsEnemy_Character_1, but EnemyCharacter1_C_47 is pending kill
+[2017.07.05-21.02.24:691][161]LogCharacterMovement: EnemyCharacter1_C_40 is stuck and failed to move! Velocity: X=-379.85 Y=259.42 Z=0.00 Location: X=2623.85 Y=2904.28 Z=265.05 Normal: X=0.83 Y=-0.56 Z=0.00 PenetrationDepth:0.720 Actor:FirstPersonCharacter_C_1 Component:CollisionCylinder BoneName:None (26 other events since notify)
+[2017.07.05-21.02.24:803][173]LogBlueprintUserMessages: [None] 0
+[2017.07.05-21.02.24:954][188]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel.OfficeBlockout' with GeneratedClass '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel.OfficeBlockout'
+[2017.07.05-21.02.24:994][188]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel.OfficeBlockout' with GeneratedClass '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/OfficeBlockout.OfficeBlockout:PersistentLevel.OfficeBlockout'
+[2017.07.05-21.02.28:120][521]Cmd: QUIT_EDITOR
+[2017.07.05-21.02.28:826][521]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.07.05-21.02.28:853][521]LogExit: Preparing to exit.
+[2017.07.05-21.02.30:001][521]LogDirectoryWatcher: A directory notification for 'H:/TDAD/TDAD/Content/' was aborted.
+[2017.07.05-21.02.30:034][521]LogExit: Editor shut down
+[2017.07.05-21.02.30:037][521]LogExit: Transaction tracking system shut down
+[2017.07.05-21.02.30:139][521]LogObj: Freed 0b from 0 cluster array pools.
+[2017.07.05-21.02.30:139][521]LogExit: Object subsystem successfully closed.
+[2017.07.05-21.02.30:162][521]LogD3D11RHI: Shutdown
+[2017.07.05-21.02.30:162][521]LogD3D11RHI: CleanupD3DDevice
+[2017.07.05-21.02.30:258][521]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.07.05-21.02.30:281][521]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (528)
+[2017.07.05-21.02.30:281][521]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (526)
+[2017.07.05-21.02.30:282][521]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (524)
+[2017.07.05-21.02.30:282][521]LogModuleManager: Shutting down and abandoning module CrashTracker (522)
+[2017.07.05-21.02.30:282][521]LogModuleManager: Shutting down and abandoning module SceneOutliner (520)
+[2017.07.05-21.02.30:282][521]LogModuleManager: Shutting down and abandoning module AddContentDialog (518)
+[2017.07.05-21.02.30:282][521]LogDirectoryWatcher: A directory notification for 'H:/UE_4.16/FeaturePacks/' was aborted.
+[2017.07.05-21.02.30:284][521]LogModuleManager: Shutting down and abandoning module WidgetCarousel (517)
+[2017.07.05-21.02.30:284][521]LogModuleManager: Shutting down and abandoning module EditorWidgets (514)
+[2017.07.05-21.02.30:284][521]LogModuleManager: Shutting down and abandoning module CollectionManager (512)
+[2017.07.05-21.02.30:284][521]LogDirectoryWatcher: A directory notification for 'H:/TDAD/TDAD/Content/Collections/' was aborted.
+[2017.07.05-21.02.30:284][521]LogDirectoryWatcher: A directory notification for 'H:/TDAD/TDAD/Content/Developers/dan/Collections/' was aborted.
+[2017.07.05-21.02.30:284][521]LogDirectoryWatcher: A directory notification for 'H:/TDAD/TDAD/Saved/Collections/' was aborted.
+[2017.07.05-21.02.30:284][521]LogModuleManager: Shutting down and abandoning module StatsViewer (510)
+[2017.07.05-21.02.30:284][521]LogModuleManager: Shutting down and abandoning module FoliageEdit (508)
+[2017.07.05-21.02.30:284][521]LogModuleManager: Shutting down and abandoning module LandscapeEditor (506)
+[2017.07.05-21.02.30:285][521]LogModuleManager: Shutting down and abandoning module MeshPaintMode (504)
+[2017.07.05-21.02.30:285][521]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (502)
+[2017.07.05-21.02.30:285][521]LogModuleManager: Shutting down and abandoning module ActorPickerMode (500)
+[2017.07.05-21.02.30:285][521]LogModuleManager: Shutting down and abandoning module GeometryMode (498)
+[2017.07.05-21.02.30:285][521]LogModuleManager: Shutting down and abandoning module TextureAlignMode (496)
+[2017.07.05-21.02.30:285][521]LogModuleManager: Shutting down and abandoning module BspMode (494)
+[2017.07.05-21.02.30:285][521]LogModuleManager: Shutting down and abandoning module HardwareSurvey (492)
+[2017.07.05-21.02.30:285][521]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (490)
+[2017.07.05-21.02.30:285][521]LogModuleManager: Shutting down and abandoning module AutomationWorker (488)
+[2017.07.05-21.02.30:285][521]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (486)
+[2017.07.05-21.02.30:286][521]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (484)
+[2017.07.05-21.02.30:287][521]LogModuleManager: Shutting down and abandoning module PlacementMode (483)
+[2017.07.05-21.02.30:287][521]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (480)
+[2017.07.05-21.02.30:287][521]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (478)
+[2017.07.05-21.02.30:287][521]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (476)
+[2017.07.05-21.02.30:287][521]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (474)
+[2017.07.05-21.02.30:287][521]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (472)
+[2017.07.05-21.02.30:287][521]LogModuleManager: Shutting down and abandoning module Media (471)
+[2017.07.05-21.02.30:287][521]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (468)
+[2017.07.05-21.02.30:287][521]LogModuleManager: Shutting down and abandoning module CharacterAI (466)
+[2017.07.05-21.02.30:287][521]LogModuleManager: Shutting down and abandoning module AudioCapture (464)
+[2017.07.05-21.02.30:287][521]LogModuleManager: Shutting down and abandoning module SequenceRecorder (463)
+[2017.07.05-21.02.30:288][521]LogModuleManager: Shutting down and abandoning module SmartSnapping (460)
+[2017.07.05-21.02.30:288][521]LogModuleManager: Shutting down and abandoning module SessionServices (458)
+[2017.07.05-21.02.30:288][521]LogModuleManager: Shutting down and abandoning module ViewportSnapping (456)
+[2017.07.05-21.02.30:288][521]LogModuleManager: Shutting down and abandoning module ViewportInteraction (454)
+[2017.07.05-21.02.30:288][521]LogModuleManager: Shutting down and abandoning module ClothPainter (452)
+[2017.07.05-21.02.30:289][521]LogModuleManager: Shutting down and abandoning module LogVisualizer (450)
+[2017.07.05-21.02.30:290][521]LogModuleManager: Shutting down and abandoning module IntroTutorials (448)
+[2017.07.05-21.02.30:290][521]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (447)
+[2017.07.05-21.02.30:291][521]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (444)
+[2017.07.05-21.02.30:291][521]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (442)
+[2017.07.05-21.02.30:291][521]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (440)
+[2017.07.05-21.02.30:291][521]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (438)
+[2017.07.05-21.02.30:291][521]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (437)
+[2017.07.05-21.02.30:960][521]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (434)
+[2017.07.05-21.02.30:960][521]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (432)
+[2017.07.05-21.02.30:960][521]LogModuleManager: Shutting down and abandoning module InputBindingEditor (430)
+[2017.07.05-21.02.30:961][521]LogModuleManager: Shutting down and abandoning module MergeActors (428)
+[2017.07.05-21.02.30:961][521]LogModuleManager: Shutting down and abandoning module SizeMap (426)
+[2017.07.05-21.02.30:961][521]LogModuleManager: Shutting down and abandoning module TreeMap (424)
+[2017.07.05-21.02.30:961][521]LogModuleManager: Shutting down and abandoning module ReferenceViewer (422)
+[2017.07.05-21.02.30:962][521]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (420)
+[2017.07.05-21.02.30:962][521]LogModuleManager: Shutting down and abandoning module LocalizationService (419)
+[2017.07.05-21.02.30:962][521]LogModuleManager: Shutting down and abandoning module HardwareTargeting (416)
+[2017.07.05-21.02.30:962][521]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (414)
+[2017.07.05-21.02.30:963][521]LogModuleManager: Shutting down and abandoning module UndoHistory (412)
+[2017.07.05-21.02.30:963][521]LogModuleManager: Shutting down and abandoning module UserFeedback (410)
+[2017.07.05-21.02.30:963][521]LogModuleManager: Shutting down and abandoning module XmlParser (408)
+[2017.07.05-21.02.30:963][521]LogModuleManager: Shutting down and abandoning module Blutility (406)
+[2017.07.05-21.02.30:963][521]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (404)
+[2017.07.05-21.02.30:963][521]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (403)
+[2017.07.05-21.02.30:963][521]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (400)
+[2017.07.05-21.02.30:963][521]LogModuleManager: Shutting down and abandoning module SettingsEditor (398)
+[2017.07.05-21.02.30:964][521]LogModuleManager: Shutting down and abandoning module ProjectLauncher (396)
+[2017.07.05-21.02.30:964][521]LogModuleManager: Shutting down and abandoning module SessionFrontend (394)
+[2017.07.05-21.02.30:965][521]LogModuleManager: Shutting down and abandoning module ProfilerClient (392)
+[2017.07.05-21.02.30:965][521]LogModuleManager: Shutting down and abandoning module DeviceManager (390)
+[2017.07.05-21.02.30:965][521]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (389)
+[2017.07.05-21.02.31:029][521]LogModuleManager: Shutting down and abandoning module AutomationController (386)
+[2017.07.05-21.02.31:030][521]LogModuleManager: Shutting down and abandoning module AutomationWindow (384)
+[2017.07.05-21.02.31:031][521]LogModuleManager: Shutting down and abandoning module Layers (382)
+[2017.07.05-21.02.31:032][521]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (380)
+[2017.07.05-21.02.31:032][521]LogModuleManager: Shutting down and abandoning module DetailCustomizations (378)
+[2017.07.05-21.02.31:032][521]LogModuleManager: Shutting down and abandoning module PackagesDialog (376)
+[2017.07.05-21.02.31:033][521]LogModuleManager: Shutting down and abandoning module Persona (374)
+[2017.07.05-21.02.31:033][521]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (373)
+[2017.07.05-21.02.31:034][521]LogModuleManager: Shutting down and abandoning module AnimGraph (371)
+[2017.07.05-21.02.31:034][521]LogModuleManager: Shutting down and abandoning module Kismet (368)
+[2017.07.05-21.02.31:035][521]LogModuleManager: Shutting down and abandoning module ClassViewer (366)
+[2017.07.05-21.02.31:035][521]LogModuleManager: Shutting down and abandoning module Toolbox (364)
+[2017.07.05-21.02.31:035][521]LogModuleManager: Shutting down and abandoning module ModuleUI (362)
+[2017.07.05-21.02.31:036][521]LogModuleManager: Shutting down and abandoning module MovieSceneTools (360)
+[2017.07.05-21.02.31:036][521]LogModuleManager: Shutting down and abandoning module OutputLog (358)
+[2017.07.05-21.02.31:037][521]LogModuleManager: Shutting down and abandoning module GammaUI (356)
+[2017.07.05-21.02.31:037][521]LogModuleManager: Shutting down and abandoning module Documentation (354)
+[2017.07.05-21.02.31:037][521]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (352)
+[2017.07.05-21.02.31:037][521]LogModuleManager: Shutting down and abandoning module MovieScene (350)
+[2017.07.05-21.02.31:037][521]LogModuleManager: Shutting down and abandoning module Niagara (348)
+[2017.07.05-21.02.31:037][521]LogModuleManager: Shutting down and abandoning module NiagaraEditor (347)
+[2017.07.05-21.02.31:038][521]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (344)
+[2017.07.05-21.02.31:038][521]LogModuleManager: Shutting down and abandoning module AnalyticsET (342)
+[2017.07.05-21.02.31:038][521]LogModuleManager: Shutting down and abandoning module PortalServices (340)
+[2017.07.05-21.02.31:038][521]LogModuleManager: Shutting down and abandoning module PortalRpc (338)
+[2017.07.05-21.02.31:038][521]LogModuleManager: Shutting down and abandoning module MessagingRpc (336)
+[2017.07.05-21.02.31:038][521]LogModuleManager: Shutting down and abandoning module AIModule (334)
+[2017.07.05-21.02.31:039][521]LogModuleManager: Shutting down and abandoning module GameplayDebugger (333)
+[2017.07.05-21.02.31:039][521]LogModuleManager: Shutting down and abandoning module AITestSuite (331)
+[2017.07.05-21.02.31:039][521]LogModuleManager: Shutting down and abandoning module ProfilerService (328)
+[2017.07.05-21.02.31:108][521]LogModuleManager: Shutting down and abandoning module TaskGraph (326)
+[2017.07.05-21.02.31:110][521]LogModuleManager: Shutting down and abandoning module SteamVRController (324)
+[2017.07.05-21.02.31:110][521]LogModuleManager: Shutting down and abandoning module SteamVR (322)
+[2017.07.05-21.02.31:110][521]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (320)
+[2017.07.05-21.02.31:110][521]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (318)
+[2017.07.05-21.02.31:110][521]LogModuleManager: Shutting down and abandoning module OculusLibrary (316)
+[2017.07.05-21.02.31:110][521]LogModuleManager: Shutting down and abandoning module OculusInput (314)
+[2017.07.05-21.02.31:110][521]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (312)
+[2017.07.05-21.02.31:110][521]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (310)
+[2017.07.05-21.02.31:110][521]LogModuleManager: Shutting down and abandoning module CableComponent (308)
+[2017.07.05-21.02.31:110][521]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (306)
+[2017.07.05-21.02.31:110][521]LogModuleManager: Shutting down and abandoning module AndroidPermission (304)
+[2017.07.05-21.02.31:110][521]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (300)
+[2017.07.05-21.02.31:111][521]LogModuleManager: Shutting down and abandoning module HTML5Networking (298)
+[2017.07.05-21.02.31:112][521]LogModuleManager: Shutting down and abandoning module AlembicImporter (296)
+[2017.07.05-21.02.31:112][521]LogModuleManager: Shutting down and abandoning module AlembicLibrary (295)
+[2017.07.05-21.02.31:112][521]LogModuleManager: Shutting down and abandoning module GeometryCache (294)
+[2017.07.05-21.02.31:112][521]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (293)
+[2017.07.05-21.02.31:112][521]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (288)
+[2017.07.05-21.02.31:112][521]LogModuleManager: Shutting down and abandoning module SuperSearch (287)
+[2017.07.05-21.02.31:112][521]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (284)
+[2017.07.05-21.02.31:112][521]LogModuleManager: Shutting down and abandoning module PluginBrowser (282)
+[2017.07.05-21.02.31:113][521]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (280)
+[2017.07.05-21.02.31:113][521]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (278)
+[2017.07.05-21.02.31:113][521]LogModuleManager: Shutting down and abandoning module DesktopPlatform (277)
+[2017.07.05-21.02.31:113][521]LogModuleManager: Shutting down and abandoning module UObjectPlugin (274)
+[2017.07.05-21.02.31:113][521]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (272)
+[2017.07.05-21.02.31:114][521]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (270)
+[2017.07.05-21.02.31:114][521]LogModuleManager: Shutting down and abandoning module GitSourceControl (268)
+[2017.07.05-21.02.31:114][521]LogModuleManager: Shutting down and abandoning module SourceControl (267)
+[2017.07.05-21.02.31:115][521]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (264)
+[2017.07.05-21.02.31:115][521]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (262)
+[2017.07.05-21.02.31:115][521]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (260)
+[2017.07.05-21.02.31:115][521]LogModuleManager: Shutting down and abandoning module Paper2DEditor (258)
+[2017.07.05-21.02.31:115][521]LogModuleManager: Shutting down and abandoning module MeshPaint (257)
+[2017.07.05-21.02.31:115][521]LogModuleManager: Shutting down and abandoning module LevelEditor (255)
+[2017.07.05-21.02.31:116][521]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (254)
+[2017.07.05-21.02.31:117][521]LogModuleManager: Shutting down and abandoning module MainFrame (252)
+[2017.07.05-21.02.31:117][521]LogModuleManager: Shutting down and abandoning module HotReload (251)
+[2017.07.05-21.02.31:117][521]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (246)
+[2017.07.05-21.02.31:118][521]LogModuleManager: Shutting down and abandoning module PhysXVehicles (244)
+[2017.07.05-21.02.31:118][521]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (242)
+[2017.07.05-21.02.31:118][521]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (240)
+[2017.07.05-21.02.31:118][521]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (238)
+[2017.07.05-21.02.31:118][521]LogModuleManager: Shutting down and abandoning module UdpMessaging (236)
+[2017.07.05-21.02.31:218][521]LogModuleManager: Shutting down and abandoning module TcpMessaging (234)
+[2017.07.05-21.02.31:320][521]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
+[2017.07.05-21.02.31:321][521]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
+[2017.07.05-21.02.31:321][521]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
+[2017.07.05-21.02.31:321][521]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
+[2017.07.05-21.02.31:322][521]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
+[2017.07.05-21.02.31:323][521]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2017.07.05-21.02.31:324][521]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
+[2017.07.05-21.02.31:324][521]LogModuleManager: Shutting down and abandoning module Paper2D (218)
+[2017.07.05-21.02.31:324][521]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
+[2017.07.05-21.02.31:324][521]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
+[2017.07.05-21.02.31:325][521]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
+[2017.07.05-21.02.31:325][521]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
+[2017.07.05-21.02.31:325][521]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
+[2017.07.05-21.02.31:325][521]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
+[2017.07.05-21.02.31:325][521]LogModuleManager: Shutting down and abandoning module VREditor (204)
+[2017.07.05-21.02.31:325][521]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
+[2017.07.05-21.02.31:326][521]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
+[2017.07.05-21.02.31:326][521]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
+[2017.07.05-21.02.31:327][521]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
+[2017.07.05-21.02.31:327][521]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
+[2017.07.05-21.02.31:328][521]LogModuleManager: Shutting down and abandoning module UMG (192)
+[2017.07.05-21.02.31:328][521]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
+[2017.07.05-21.02.31:329][521]LogModuleManager: Shutting down and abandoning module Sequencer (190)
+[2017.07.05-21.02.31:329][521]LogModuleManager: Shutting down and abandoning module AssetTools (188)
+[2017.07.05-21.02.31:332][521]LogModuleManager: Shutting down and abandoning module MessageLog (187)
+[2017.07.05-21.02.31:332][521]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
+[2017.07.05-21.02.31:332][521]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
+[2017.07.05-21.02.31:333][521]LogModuleManager: Shutting down and abandoning module Slate (178)
+[2017.07.05-21.02.31:333][521]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
+[2017.07.05-21.02.31:335][521]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
+[2017.07.05-21.02.31:335][521]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
+[2017.07.05-21.02.31:335][521]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
+[2017.07.05-21.02.31:335][521]LogModuleManager: Shutting down and abandoning module Networking (168)
+[2017.07.05-21.02.31:335][521]LogModuleManager: Shutting down and abandoning module Core (164)
+[2017.07.05-21.02.31:335][521]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
+[2017.07.05-21.02.31:427][521]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.07.05-21.02.31:427][521]LogDirectoryWatcher: A directory notification for '../../../../TDAD/TDAD/Content/' was aborted.
+[2017.07.05-21.02.31:427][521]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.07.05-21.02.31:427][521]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
+[2017.07.05-21.02.31:433][521]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
+[2017.07.05-21.02.31:433][521]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
+[2017.07.05-21.02.31:433][521]LogModuleManager: Shutting down and abandoning module LevelSequence (156)
+[2017.07.05-21.02.31:433][521]LogModuleManager: Shutting down and abandoning module PhysXFormats (154)
+[2017.07.05-21.02.31:433][521]LogModuleManager: Shutting down and abandoning module MeshUtilities (152)
+[2017.07.05-21.02.31:434][521]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (151)
+[2017.07.05-21.02.31:435][521]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (149)
+[2017.07.05-21.02.31:435][521]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (147)
+[2017.07.05-21.02.31:435][521]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2017.07.05-21.02.31:444][521]LogDerivedDataCache: Shutdown
+[2017.07.05-21.02.31:444][521]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2017.07.05-21.02.31:444][521]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2017.07.05-21.02.31:444][521]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2017.07.05-21.02.31:445][521]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2017.07.05-21.02.31:445][521]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2017.07.05-21.02.31:445][521]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2017.07.05-21.02.31:446][521]LogModuleManager: Shutting down and abandoning module OculusRift (56)
+[2017.07.05-21.02.31:447][521]LogHMD: Oculus shutdown.
+[2017.07.05-21.02.31:447][521]LogModuleManager: Shutting down and abandoning module GearVRController (54)
+[2017.07.05-21.02.31:447][521]LogModuleManager: Shutting down and abandoning module GearVR (52)
+[2017.07.05-21.02.31:447][521]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2017.07.05-21.02.31:447][521]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2017.07.05-21.02.31:447][521]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2017.07.05-21.02.31:447][521]LogOnline:Display: Unloading online subsystem: NULL
+[2017.07.05-21.02.31:448][521]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2017.07.05-21.02.31:449][521]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2017.07.05-21.02.31:449][521]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.07.05-21.02.31:449][521]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B45518BFF-45D6-9A92-8D48-01A971E80896%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.2-3514769%2B%2B%2BUE4%2BRelease-4.16&UserID=0ebe74a642ff2ab791bbe296c330a758%7C6a16f69eeaa44615a039b4415f763e2c%7Cd0b1f283-0f37-4190-b47f-93078b1a731d&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.07.05-21.02.31:457][521]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2017.07.05-21.02.31:459][521]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
+[2017.07.05-21.02.31:459][521]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
+[2017.07.05-21.02.31:460][521]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
+[2017.07.05-21.02.31:460][521]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.07.05-21.02.31:460][521]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.07.05-21.02.31:461][521]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.07.05-21.02.31:461][521]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.07.05-21.02.31:461][521]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.07.05-21.02.31:462][521]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.07.05-21.02.31:462][521]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.07.05-21.02.31:462][521]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.07.05-21.02.31:462][521]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.07.05-21.02.31:462][521]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.07.05-21.02.31:462][521]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.07.05-21.02.31:462][521]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.07.05-21.02.31:462][521]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.07.05-21.02.31:462][521]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.07.05-21.02.31:463][521]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.07.05-21.02.31:465][521]LogExit: Exiting.
+[2017.07.05-21.02.31:476][521]Log file closed, 07/05/17 22:02:31
